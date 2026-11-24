@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SecondBrain Sync</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1f2328;
+    --muted: #57606a;
+    --link: #0b57d0;
+    --rule: #d0d7de;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121417;
+      --fg: #e6e8eb;
+      --muted: #a0a7b0;
+      --link: #8ab4f8;
+      --rule: #343a42;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 1rem; }
+  h2 { font-size: 1.25rem; margin: 2rem 0 0.5rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--link); }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>SecondBrain Sync</h1>
+  <p>SecondBrain Sync is a personal tool that runs on the owner's own computer. It copies selected markdown notes from a local folder into a single folder in the owner's own Google Drive, using rclone.</p>
+
+  <h2>What it accesses</h2>
+  <p>The app uses the Google Drive API with the <code>drive.file</code> scope only. This scope lets the app see and change only the files and folders that the app itself creates. The app never reads any other file in Google Drive.</p>
+
+  <h2>Who uses it</h2>
+  <p>This is a personal, single-user tool. It is used by one person, the owner, and is not offered to the public.</p>
+
+  <footer>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+    <p>Contact: <a href="mailto:swapnesh2601201@gmail.com">swapnesh2601201@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
